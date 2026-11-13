@@ -1,0 +1,145 @@
+/* Ayu Light — https://github.com/ayu-theme/ayu-colors */
+.light-theme {
+  /* UI colors */
+  --background: #f8f9fa;
+  --base-gray: #828e9f;
+  --base-blue: #22a4e6;
+  --base-green: #86b300;
+  --base-yellow: #eba400;
+  --base-orange: #fa8532;
+  --base-red: #f07171;
+  --base-purple: #a37acc;
+  --base-pink: #f2a191;
+  --base-accent: #f29718;
+
+  /* Editor colors */
+  --ayu-bg: #fcfcfc;
+  --ayu-fg: #5c6166;
+  --ayu-caret: #f29718;
+  --ayu-line: #828e9f1a;
+  --ayu-selection: #035bd626;
+  --ayu-selection-inactive: #035bd612;
+  --ayu-find-match: #ffe294;
+  --ayu-find-match-inactive: #ffe29480;
+  --ayu-line-number: #828e9f66;
+  --ayu-line-number-active: #828e9fcc;
+  --ayu-indent-guide: #828e9f2e;
+  --ayu-indent-guide-active: #828e9f59;
+  --ayu-error: #e65050;
+
+  /* Syntax colors */
+  --ayu-tag: #55b4d4;
+  --ayu-func: #eba400;
+  --ayu-entity: #22a4e6;
+  --ayu-string: #86b300;
+  --ayu-regexp: #4cbf99;
+  --ayu-markup: #f07171;
+  --ayu-keyword: #fa8532;
+  --ayu-special: #e59645;
+  --ayu-comment: #adaeb1;
+  --ayu-constant: #a37acc;
+  --ayu-operator: #f2a191;
+}
+
+/* Ayu Dark — https://github.com/ayu-theme/ayu-colors */
+.dark-theme {
+  /* UI colors */
+  --background: #0d1017;
+  --base-gray: #5a6378;
+  --base-blue: #59c2ff;
+  --base-green: #aad94c;
+  --base-yellow: #ffb454;
+  --base-orange: #ff8f40;
+  --base-red: #f07178;
+  --base-purple: #d2a6ff;
+  --base-pink: #f29668;
+  --base-accent: #e6b450;
+
+  /* Editor colors */
+  --ayu-bg: #10141c;
+  --ayu-fg: #bfbdb6;
+  --ayu-caret: #e6b450;
+  --ayu-line: #161a24;
+  --ayu-selection: #3388ff40;
+  --ayu-selection-inactive: #80b5ff26;
+  --ayu-find-match: #4c4126;
+  --ayu-find-match-inactive: #4c412680;
+  --ayu-line-number: #5a6378a6;
+  --ayu-line-number-active: #5a6378;
+  --ayu-indent-guide: #5a637842;
+  --ayu-indent-guide-active: #5a6378a1;
+  --ayu-error: #d95757;
+
+  /* Syntax colors */
+  --ayu-tag: #39bae6;
+  --ayu-func: #ffb454;
+  --ayu-entity: #59c2ff;
+  --ayu-string: #aad94c;
+  --ayu-regexp: #95e6cb;
+  --ayu-markup: #f07178;
+  --ayu-keyword: #ff8f40;
+  --ayu-special: #e6c08a;
+  --ayu-comment: #5a6673;
+  --ayu-constant: #d2a6ff;
+  --ayu-operator: #f29668;
+}
+
+.light-theme,
+.dark-theme {
+  /* ===== Editor ===== */
+
+  /* Editor chrome */
+  --editor-bg: var(--ayu-bg);
+  --editor-fg: var(--ayu-fg);
+  --editor-cursor-bg: var(--ayu-caret);
+  --editor-selected-bg: var(--ayu-selection);
+  --editor-activeline-bg: var(--ayu-line);
+  --editor-activeline-gutter-bg: var(--ayu-line);
+  --editor-error-fg: var(--ayu-error);
+  --editor-gutter-bg: var(--ayu-bg);
+  --editor-linenumber-fg: var(--ayu-line-number);
+  --editor-linenumber-active-fg: var(--ayu-line-number-active);
+  --editor-foldgutter-fg: var(--ayu-line-number);
+  --editor-foldgutter-fg-hover: var(--ayu-line-number-active);
+  --editor-indent-marker-bg: var(--ayu-indent-guide);
+  --editor-indent-marker-active-bg: var(--ayu-indent-guide-active);
+
+  /* Matches and markers */
+  --editor-guttermarker-subtle-fg: var(--ayu-line-number);
+  --editor-matchingselection-bg: var(--ayu-selection-inactive);
+  --editor-searchmatch-bg: var(--ayu-find-match-inactive);
+  --editor-searchmatch-selected-bg: var(--ayu-find-match);
+  --editor-matchingbracket-fg: var(--ayu-fg);
+  --editor-matchingbracket-bg: var(--ayu-selection-inactive);
+  --editor-fatcursor-bg: var(--ayu-caret);
+
+  /* ===== Color Syntax ===== */
+
+  --syntax-comment: var(--ayu-comment);
+  --syntax-constant: var(--ayu-constant);
+  --syntax-decorator: var(--ayu-special);
+  --syntax-function: var(--ayu-func);
+  --syntax-keyword: var(--ayu-keyword);
+  --syntax-link: var(--ayu-tag);
+  --syntax-punctuation: var(--ayu-fg);
+  --syntax-string: var(--ayu-string);
+  --syntax-type: var(--ayu-entity);
+  --syntax-variable: var(--ayu-fg);
+  --syntax-diff: var(--ayu-markup);
+
+  --editor-self-fg: var(--ayu-tag);
+  --editor-standard-fg: var(--ayu-func);
+  --editor-regexp-fg: var(--ayu-regexp);
+  --editor-escape-fg: var(--ayu-regexp);
+  --editor-property-fg: var(--ayu-tag);
+  --editor-propertyName-fg: var(--ayu-tag);
+  --editor-attributeName-fg: var(--ayu-func);
+  --editor-operator-fg: var(--ayu-operator);
+  --editor-heading-fg: var(--ayu-markup);
+  --editor-strikethrough-fg: var(--ayu-comment);
+
+  /* ===== Mongo Shell ===== */
+
+  --mongo-shell-mongo-prompt-fg: var(--ayu-string);
+  --mongo-shell-ansi-output-fg: var(--ayu-fg);
+}
